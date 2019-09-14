@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piskel clone</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Piskel clone</h1>
+  </header>
+
+  <main class="main">
+    <div class=first-column-wrap>
+      <div class="tools-container">
+        <button class="tool-item pen-tool"></button>
+        <button class="tool-item mirror-pen-tool"></button>
+        <button class="tool-item eraser-tool"></button>
+        <button class="tool-item line-tool"></button>
+        <button class="tool-item rect-tool"></button>
+        <button class="tool-item fill-rect-tool"></button>
+        <button class="tool-item arc-tool"></button>
+        <button class="tool-item lighten-tool"></button>
+        <button class="tool-item color-picker-tool"></button>
+      </div>
+    </div>
+
+    <div class="frames-container"></div>
+
+    <div class="canvas-wrap">
+      <div class="canvas-container"></div>
+    </div>
+
+    <div class="animation-wrap">
+      <div class="animation-container"></div>
+      <div class="fps-controller controller-panel">
+        <input class="fps-handle" type="range" min="1" max="24" value="1">
+        <div class="current-fps current-controller-value"><span id="fps">1</span>fps</div>
+      </div>
+
+      <div class="fat-controller controller-panel">
+        <input class="fat-handle" type="range" min="1" max="50" value="1">
+        <div class="current-fat current-controller-value"><span id="fat">1</span>fat</div>
+      </div>
+
+      <div class="canvas-size-controller controller-panel">
+        <input class="canvas-size-handle" type="range" min="32" max="800" value="800">
+        <div class="current-canvas-size current-controller-value"><span id="canvas-size">800</span>size</div>
+      </div>
+
+      <label>
+        Current color:
+        <input type="color" id="color-1">
+      </label>
+      <button id="swap-color">Swap color</button>
+      <label>
+        Second color:
+        <input type="color" id="color-2">
+      </label>
+
+      <div class="data-container">
+        <div class="cursor-cords">
+          <p>Cursor cords: <span id="cords-cursor"></span></p>
+        </div>
+
+        <div class="canvas-size">
+          <p>Canvas size: <span id="size-canvas">800 x 800</span></p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

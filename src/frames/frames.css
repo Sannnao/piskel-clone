@@ -1,0 +1,68 @@
+.frame-wrap {
+  position: relative;
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  margin: 5px 0;
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-size: 100%;
+  box-shadow: 0 2px 5px 0 #808080;
+  /* image-rendering: pixelated; */
+}
+
+.frame-wrap.over {
+  border: 2px dashed #000;
+}
+
+.frames-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-button {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  margin: 5px 0;
+  color: gray;
+  border: 2px solid gray;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 #808080;
+}
+
+.frame-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-family: inherit;
+  color: gray;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 5%;
+}
+
+.active-frame {
+  border: 2px solid yellow;
+}
+
+.frame-num {
+  left: 0;
+  top: 0;
+  background-color: yellow;
+}
+
+.del-button {
+  right: 0;
+  top: 0;
+}
+
+.dubl-button {
+  right: 0;
+  bottom: 0;
+}

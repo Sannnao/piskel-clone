@@ -1,0 +1,64 @@
+.tools-container {
+  display: grid;
+  grid-template: repeat(5, 45px) / 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.tool-item {
+  border: 2px solid gray;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  outline: none;
+}
+
+.tool-item:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.tool-item:active {
+  box-shadow: inset 1px 1px 3px 0 gray;
+}
+
+.active-tool {
+  box-shadow: inset 1px 1px 3px 0 gray;
+}
+
+
+
+.pen-tool {
+  background-image: url('./assets/pen-tool.png');
+}
+
+.mirror-pen-tool {
+  background-image: url('./assets/mirror-pen-tool.png');
+}
+
+.eraser-tool {
+  background-image: url('./assets/eraser-tool.png');
+}
+
+.line-tool {
+  background-image: url('./assets/line-tool.png');
+}
+
+.rect-tool {
+  background-image: url('./assets/rect-tool.png');
+}
+
+.fill-rect-tool {
+  background-image: url('./assets/fill-rect-tool.png');
+}
+
+.arc-tool {
+  background-image: url('./assets/arc-tool.png');
+}
+
+.lighten-tool {
+  background-image: url('./assets/lighten-tool.png');
+}
+
+.color-picker-tool {
+  background-image: url('./assets/color-picker-tool.png');
+}
